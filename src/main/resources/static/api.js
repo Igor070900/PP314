@@ -146,7 +146,7 @@ function getAuthorizedUser() {
 
 document.getElementById('addNewUser').addEventListener('submit', (event) => {
     event.preventDefault()
-
+        // не хватает скобки выше
     // Собираем данные из формы
     const user = {
         name: document.getElementById('nameToAdd').value,
