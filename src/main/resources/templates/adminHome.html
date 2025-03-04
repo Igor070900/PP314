@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin panel</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 
@@ -15,8 +13,7 @@
     <span class="timer-line"></span>
 </div>
 
-<div class="modal fade" id="editUserModal" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="editUserModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -28,12 +25,10 @@
             <form id="editUserForm">
                 <div class="modal-body col-12 d-flex align-items-center flex-column">
                     <p class="m-0 text-center">ID</p>
-                    <input class="col-7 border rounded py-1 mb-3" type="text" id="editUserId"
-                           readonly>
+                    <input class="col-7 border rounded py-1 mb-3" type="text" id="editUserId" readonly>
 
                     <p class="m-0 text-center">First name</p>
-                    <input class="col-7 border rounded py-1 mb-3" type="text" id="editName"
-                           value="">
+                    <input class="col-7 border rounded py-1 mb-3" type="text" id="editName" value="">
 
                     <p class="m-0 text-center">Last name</p>
                     <input class="col-7 border rounded py-1 mb-3" type="text" id="editLastname">
@@ -45,26 +40,22 @@
                     <input class="col-7 border rounded py-1 mb-3" type="email" id="editEmail">
 
                     <p class="m-0 text-center">Password</p>
-                    <input class="col-7 border rounded py-1 mb-3" type="password"
-                           id="editPassword">
+                    <input class="col-7 border rounded py-1 mb-3" type="password" id="editPassword">
 
                     <p class="m-0">Role</p>
                     <div class="col-7 mb-3">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="roleToEdit"
-                                   id="userCheckRole" value="USER">
+                            <input class="form-check-input" type="checkbox" name="roleToEdit" id="userCheckRole" value="USER">
                             <label class="form-check-label">USER</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="roleToEdit"
-                                   id="adminCheckRole" value="ADMIN">
+                            <input class="form-check-input" type="checkbox" name="roleToEdit" id="adminCheckRole" value="ADMIN">
                             <label class="form-check-label">ADMIN</label>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
-                            id="closeEdit">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeEdit">Close</button>
                     <button type="submit" class="btn btn-primary">Edit</button>
                 </div>
             </form>
@@ -72,8 +63,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -103,8 +93,7 @@
                     <input class="col-7 border rounded py-1 mb-3" type="password" id="deleteRoles">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary"
-                            id="closeDelete" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" id="closeDelete" data-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </div>
             </form>
@@ -125,8 +114,7 @@
     </form>
 </div>
 
-<div class="container-fluid m-0 p-0 d-inline-flex justify-content-between align-items-center custom"
-     id="sections">
+<div class="container-fluid m-0 p-0 d-inline-flex justify-content-between align-items-center custom" id="sections">
     <div class="col-2 bg-white m-0 p-0 customDiv">
         <div class="container-fluid m-0 p-0 pt-2">
             <p class="bg-primary text-white pl-3 py-2 m-0 btn-custom" style="cursor: pointer;">Admin</p>
@@ -171,35 +159,28 @@
             <p class="alert-secondary py-2 pl-3 m-0 border-bottom">Add user</p>
             <form id="addNewUser" class="bg-white d-flex flex-column align-items-center py-3">
                 <p class="m-0">First name</p>
-                <input class="col-4 border rounded py-1 mb-3" type="text" id="nameToAdd"
-                       placeholder="First name" required>
+                <input class="col-4 border rounded py-1 mb-3" type="text" id="nameToAdd" placeholder="First name" required>
 
                 <p class="m-0">Last name</p>
-                <input class="col-4 border rounded py-1 mb-3" type="text" id="lastnameToAdd"
-                       placeholder="Last name" required>
+                <input class="col-4 border rounded py-1 mb-3" type="text" id="lastnameToAdd" placeholder="Last name" required>
 
                 <p class="m-0">Age</p>
-                <input class="col-4 border rounded py-1 mb-3" type="number" id="ageToAdd"
-                       placeholder="Age" required>
+                <input class="col-4 border rounded py-1 mb-3" type="number" id="ageToAdd" placeholder="Age" required>
 
                 <p class="m-0">Email</p>
-                <input class="col-4 border rounded py-1 mb-3" type="email" id="emailToAdd"
-                       placeholder="Email" required>
+                <input class="col-4 border rounded py-1 mb-3" type="email" id="emailToAdd" placeholder="Email" required>
 
                 <p class="m-0">Password</p>
-                <input class="col-4 border rounded py-1 mb-3" type="password" id="passwordToAdd"
-                       placeholder="Password" required>
+                <input class="col-4 border rounded py-1 mb-3" type="password" id="passwordToAdd" placeholder="Password" required>
 
                 <p class="m-0">Role</p>
                 <div class="col-4 mb-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox"
-                               name="roleToAdd" id="userCheckRole" value="USER">
+                        <input class="form-check-input" type="checkbox" name="roleToAdd" id="userCheckRole" value="USER">
                         <label class="form-check-label" for="userCheckRole">USER</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input"
-                               type="checkbox" name="roleToAdd" id="adminCheckRole" value="ADMIN">
+                        <input class="form-check-input" type="checkbox" name="roleToAdd" id="adminCheckRole" value="ADMIN">
                         <label class="form-check-label" for="adminCheckRole">ADMIN</label>
                     </div>
                 </div>
@@ -236,18 +217,10 @@
 
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.6.20/fetch.js"
-        integrity="sha512-HcIFTco6s7ipvn1hPSsztqwgA0u1BlgMmFCUS1qCEyT76pSP1F5//mawE+95ZRQ3U1LxtyIMyT6+tyJg36UOew=="
-        type="module" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.6.20/fetch.js" integrity="sha512-HcIFTco6s7ipvn1hPSsztqwgA0u1BlgMmFCUS1qCEyT76pSP1F5//mawE+95ZRQ3U1LxtyIMyT6+tyJg36UOew==" type="module" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="/changeSelections.js"></script>
 <script src="/api.js"></script>
@@ -332,6 +305,7 @@
         pointer-events: none;
         transition: all 0.3s ease-in-out;
     }
+
 
     #successAlert.hidden .timer-line {
         width: 100%;
